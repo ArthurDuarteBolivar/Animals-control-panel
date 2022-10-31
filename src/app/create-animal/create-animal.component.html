@@ -1,0 +1,22 @@
+<form [formGroup]="animalForm" (ngSubmit)="createAnimals()">
+  <h1>Create animals</h1>
+  <label> Animal Name</label>
+  <input id="username" type="search" formControlName="name" placeholder="">
+  <label style="color: red;" *ngIf="animalForm.controls.name.touched && animalForm.controls.name.invalid">Enter
+    name</label>
+  <label> Animal Type</label>
+  <input id="type" type="text" formControlName="type">
+  <label style="color: red;" *ngIf="animalForm.controls.type.touched && animalForm.controls.type.invalid">Enter
+    type</label>
+  <label> Animal Age</label>
+  <input id="age" type="number" formControlName="age">
+  <label style="color: red;" *ngIf="animalForm.controls.age.touched && animalForm.controls.age.invalid">Enter
+    age</label>
+  <button id="buttonTrue" *ngIf="animalForm.invalid else elseBlock" disabled
+    class="btn btn-success btn-lg">Create</button>
+  <span [style.color]="resColor" id="response">{{res}}</span>
+</form>
+
+<ng-template #elseBlock>
+  <button id="buttonFalse" class="btn btn-success btn-lg">Create</button>
+</ng-template>

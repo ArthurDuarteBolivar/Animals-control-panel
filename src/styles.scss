@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@mixin font($size, $color, $weight) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  font-family: "Kanit", sans-serif;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  height: 980px;
+  overflow: hidden;
+  background-color: #505050;
+}
+span {
+  font-size: 30px;
+}

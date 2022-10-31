@@ -1,0 +1,21 @@
+@import "/src/styles.scss";
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 10px;
+  button {
+    margin: 10px;
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+td {
+  text-transform: capitalize;
+}

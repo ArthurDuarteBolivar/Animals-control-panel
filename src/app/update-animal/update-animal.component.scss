@@ -1,0 +1,16 @@
+@import "/src/styles.scss";
+@import "/src/app/create-animal/create-animal.component.scss";
+
+.ng-invalid {
+  input[type="text"] {
+    border-color: red;
+  }
+  input[type="search"] {
+    border-color: green;
+  }
+}
+.ng-valid {
+  input {
+    border-color: green;
+  }
+}

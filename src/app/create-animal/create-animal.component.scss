@@ -1,0 +1,44 @@
+@import "/src/styles.scss";
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+  label {
+    @include font(32px, white, 500);
+    margin: 10px;
+  }
+  input {
+    @include font(32px, black, 500);
+    margin: 10px;
+  }
+  h1 {
+    @include font(64px, black, 700);
+    margin: auto;
+  }
+  .response {
+    @include font(40px, red, 400);
+  }
+}
+
+.ng-invalid {
+  input[type="submit"]:disabled {
+    background: #000;
+  }
+  input {
+    border-color: red;
+  }
+}
+.ng-valid {
+  input {
+    border-color: green;
+  }
+  #buttonElse {
+    transition: transform 0.5s;
+  }
+  #buttonElse:hover {
+    transform: scale(1.05);
+  }
+}
